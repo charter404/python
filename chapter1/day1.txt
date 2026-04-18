@@ -1,0 +1,66 @@
+The order of operations (also called precedence) of Python math operators is similar to that of mathematics. The ** operator is evaluated first; the *, /, //, and % operators are evaluated next, from left to right; and the + and - operators are evaluated last (also from left to right). You can use parentheses to override the usual precedence if you need to. Whitespace in between the operators and values doesn’t matter in Python, except for the indentation at the beginning of the line. But the convention, or unofficial rule, is to have a single space in between operators and values. Enter the following expressions into the interactive shell:
+
+Example :
+
+>>> 2 + 3 * 6
+20
+>>> (2 + 3) * 6
+30
+
+
+
+##The Integer, Floating-Point, and String Data Types
+A data type is a category for values, and every value belongs to exactly one data type.
+
+Integer(int) :
+	The integer (or int) data type indicates values that are whole numbers.The values -2 and 30, for example, are said to be integer values.
+	The integer (or int) data type indicates values that are whole numbers.
+
+Floating points number (float):
+	Numbers with a decimal point, such as 3.14, are called floating-point numbers (or floats)
+	Note that even though the value 42 is an integer, the value 42.0 would be a floating-point number.
+
+IMP:
+	One subtle detail about Python is that any math performed using an int and a float results in a float, not an int.
+	While 3 + 4 evaluates to the integer 7, the expression 3 + 4.0 evaluates to the floating-point number 7.0. 
+
+Strings(str):
+	Python programs can also have text values called strings, or strs (pronounced “stirs”). Always surround your string in single-quote (') characters (as in 'Hello' or 'Goodbye cruel world!') so that Python knows where the string begins and ends.
+	You can even have a string with no characters in it, '', called a blank string or an empty string. 
+
+
+##Data type
+Examples
+
+Integer (int)
+	-2, -1, 0, 1, 2, 3, 4, 5
+
+Floating-point number (float)
+	-1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25
+
+String (str)
+	'a', 'aa', 'aaa', 'Hello!', '11 cats', '5'
+
+##String Concatenation and Replication
+The meaning of an operator may change based on the data types of the values next to it. For example, + is the addition operator when it operates on two integers or floating-point values. However, when + is used to combine two string values, it joins the strings as the string concatenation operator. Enter the following into the interactive shell:
+
+>>> 'Alice' + 'Bob'
+'AliceBob'
+
+
+The * operator multiplies two integer or floating-point values. But when the * operator is used on one string value and one integer value, it becomes the string replication operator. Enter a string multiplied by a number into the interactive shell to see this in action:
+
+>>> 'Alice' * 5
+'AliceAliceAliceAliceAlice'
+
+
+
+##Storing Values in Variables
+	A variable is like a box in the computer’s memory where you can store a single value. If you want to use the result of an evaluated expression later in your program, you can save it inside a variable.
+	When a variable is assigned a new value ❸, the old value is forgotten,
+
+	A good variable name describes the data it contains.
+	Variable names are case-sensitive, meaning that spam, SPAM, Spam, and sPaM are four different variables
+
+IMP: 
+	use for python visualization tool https://pythontutor.com/visualize.html#mode=display
